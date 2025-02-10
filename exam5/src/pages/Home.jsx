@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // 👈 Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [products, setProducts] = useState([]); 
-  const [cart, setCart] = useState([]); // State to store cart items
-  const navigate = useNavigate(); // 👈 Hook for navigation
+  const [cart, setCart] = useState([]); 
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const getApi = async () => {
@@ -19,12 +19,11 @@ const Home = () => {
     getApi();
   }, []);
 
-  // 🛒 Add product to cart
   const addToCart = (product) => {
     const updatedCart = [...cart, product];
     setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save to localStorage
-    navigate("/cart"); // Redirect to cart page
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    navigate("/cart"); 
   };
 
   return (
@@ -45,7 +44,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold text-gray-700 text-center">{product.title}</h3>
             <p className="text-gray-500 mt-2">Price: <span className="font-bold text-blue-600">${product.price}</span></p>
             <button 
-              onClick={() => addToCart(product)} // 👈 Click to add to cart
+              onClick={() => addToCart(product)} 
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
               Add to Cart
