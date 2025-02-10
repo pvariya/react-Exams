@@ -1,8 +1,15 @@
-# React + Vite
+# 🛒 React Exams App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React-based Exam Management Application**. It includes features like product listings, a shopping cart, and responsive design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+🔗 **[Click here to view the deployed app](https://react-exams-x4jq.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Installation
+To run this project locally:
+
+```sh
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+npm install
+npm start
