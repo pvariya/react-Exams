@@ -52,4 +52,24 @@ const login = async (req, res) => {
     }
 }
 
-module.exports = { signUp ,login}
+// const getStudent = async (req, res) => {
+//     try {
+//         let user = await User.find({ role: "Student" });
+//         res.json(user);
+//     } catch (error) {
+//         res.json({ "getAlluser error": error.message });
+//     }
+// };
+
+
+// const getTeacher = async (req, res) => {
+//     try {
+//         let user = await User.findOne({ role: "Teacher" });
+//         res.json(user);
+//     } catch (error) {
+//         res.json({ "getTeacher error": error.message });
+//     }
+// };
+
+
+module.exports = { signUp, login }
